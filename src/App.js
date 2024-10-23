@@ -72,7 +72,7 @@ const Terminal = () => {
         <div className="terminal">
           <div className="output">
             {history.map((entry, index) => (
-              <p key={index} className={entry.sender === 'crypto_loser' ? 'user-message' : 'ai-message'}>
+              <p key={index} className={entry.sender === 'You' ? 'user-message' : 'ai-message'}>
                 <strong>{entry.sender} >> </strong>{entry.message}
               </p>
             ))}
