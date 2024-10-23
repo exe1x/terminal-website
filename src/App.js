@@ -59,7 +59,7 @@ const Terminal = () => {
 `}
         </pre>
         <div className="links">
-          <a href="https://x.com/TerminalOfGirls" target="_blank" rel="noopener noreferrer">[twitter]</a>
+          <a href="https://x.com/TerminalOfFud" target="_blank" rel="noopener noreferrer">[twitter]</a>
           <a href="https://pump.fun" target="_blank" rel="noopener noreferrer">[pump.fun]</a>
         </div>
       </div>
