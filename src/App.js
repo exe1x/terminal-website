@@ -30,13 +30,13 @@ const Terminal = () => {
         // Add Sydney's response to the history
         setHistory(prevHistory => [
           ...prevHistory,
-          { sender: 'sydney', message: response.data.response }
+          { sender: 'FudderAI', message: response.data.response }
         ]);
       } catch (error) {
         console.error('Error communicating with the backend:', error);
         setHistory(prevHistory => [
           ...prevHistory,
-          { sender: 'sydney', message: "Sorry, I couldn't connect to the server." }
+          { sender: 'FudderAI', message: "Sorry, I couldn't connect to the server." }
         ]);
       }
 
