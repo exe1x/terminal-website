@@ -1,0 +1,109 @@
+/* Overall terminal container */
+.terminal-container {
+    width: 80%;
+    margin: 50px auto;
+    background-color: #000;
+    color: #00ff00;
+    font-family: 'Courier New', monospace;
+    border: 2px solid #00ff00;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 0 20px #00ff00;
+    position: relative;
+  }
+  
+  /* Header styles */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .header h1 {
+    margin: 0;
+  }
+  
+  .links a {
+    color: #00ff00;
+    margin-left: 15px;
+    text-decoration: none;
+  }
+  
+  .links a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Terminal window */
+  .terminal {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-top: 1px solid #00ff00;
+    padding-top: 10px;
+  }
+  
+  /* Output area */
+  .output {
+    height: 300px;
+    overflow-y: auto;
+    margin-bottom: 10px;
+  }
+  
+  .output p {
+    margin: 0;
+  }
+  
+  /* Input area */
+  .input-area {
+    display: flex;
+    align-items: center;
+  }
+  
+  .prompt {
+    margin-right: 5px;
+    color: #00ff00;
+  }
+  
+  input {
+    background-color: transparent;
+    border: none;
+    color: #00ff00;
+    font-size: 16px;
+    width: 100%;
+    outline: none;
+    font-family: inherit;
+  }
+  
+  .send-button {
+    background-color: #00ff00;
+    color: #000;
+    border: none;
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  
+  .send-button:hover {
+    background-color: #00cc00;
+  }
+  
+  .send-button:active {
+    background-color: #009900;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .terminal-container {
+      width: 95%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .terminal-container {
+      width: 100%;
+    }
+  }
+  
