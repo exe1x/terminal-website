@@ -4,7 +4,7 @@ import axios from 'axios'; // Import Axios to make API requests
 const Terminal = () => {
   const [input, setInput] = useState('');
   const [history, setHistory] = useState([
-    { sender: 'sydney', message: "I'm Sydney, your terminal girlfriend." }
+    { sender: 'FudderAI', message: "What the fuck do you want? I'm tired of seeing these bullshit AIs run." }
   ]);
 
   const handleKeyDown = (e) => {
@@ -18,7 +18,7 @@ const Terminal = () => {
       // Add user message to the history
       setHistory(prevHistory => [
         ...prevHistory,
-        { sender: 'crypto_loser', message: input }
+        { sender: 'You', message: input }
       ]);
 
       try {
@@ -50,12 +50,13 @@ const Terminal = () => {
       {/* Header with ASCII art and links */}
       <div className="header">
         <pre>
-{` _                      _             _           __         _      _     
-| |_ ___ _ __ _ __ ___ (_)_ __   __ _| |    ___  / _|   __ _(_)_ __| |___ 
-| __/ _ \\ '__| '_ \\ _ \\| | '_ \\ / _\` | |   / _ \\| |_   / _\` | | '__| / __|
-| ||  __/ |  | | | | | | | | | | (_| | |  | (_) |  _| | (_| | | |  | \\__ \\
- \\__\\___|_|  |_| |_| |_|_|_| |_|\\__,_|_|___\\___/|_|____\\__, |_|_|  |_|___/
-                                      |_____|    |_____|___/              `}
+        {` _                      _             _           __    __           _ 
+| |_ ___ _ __ _ __ ___ (_)_ __   __ _| |    ___  / _|  / _|_   _  __| |
+| __/ _ \\ '__| '_ \` _ \\| | '_ \\ / _\` | |   / _ \\| |_  | |_| | | |/ _\` |
+| ||  __/ |  | | | | | | | | | | (_| | |  | (_) |  _| |  _| |_| | (_| |
+ \\__\\___|_|  |_| |_| |_|_|_| |_|\\__,_|_|___\\___/|_|___|_|  \\__,_|\\__,_|
+                                      |_____|    |_____|               
+`}
         </pre>
         <div className="links">
           <a href="https://x.com/TerminalOfGirls" target="_blank" rel="noopener noreferrer">[twitter]</a>
@@ -65,8 +66,7 @@ const Terminal = () => {
 
       {/* Terminal and Image */}
       <div className="terminal-container">
-        <div className="image-container">
-          <img src="./girly.png" alt="Sydney" className="ai-image" />
+        <div className="image-container"> 
         </div>
 
         <div className="terminal">
