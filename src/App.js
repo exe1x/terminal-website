@@ -4,7 +4,7 @@ import axios from 'axios'; // Import Axios to make API requests
 const Terminal = () => {
   const [input, setInput] = useState('');
   const [history, setHistory] = useState([
-    { sender: 'FudderAI', message: "What the fuck do you want? I'm tired of seeing these bullshit AIs run." }
+    { sender: 'hear_me_out', message: "Hear me out. What if this coin sends to $1 million?" }
   ]);
 
   const handleKeyDown = (e) => {
@@ -30,13 +30,13 @@ const Terminal = () => {
         // Add Sydney's response to the history
         setHistory(prevHistory => [
           ...prevHistory,
-          { sender: 'FudderAI', message: response.data.response }
+          { sender: 'hear_me_out', message: response.data.response }
         ]);
       } catch (error) {
         console.error('Error communicating with the backend:', error);
         setHistory(prevHistory => [
           ...prevHistory,
-          { sender: 'FudderAI', message: "Sorry, I couldn't connect to the server." }
+          { sender: 'hear_me_out', message: "Sorry, I couldn't connect to the server." }
         ]);
       }
 
@@ -50,23 +50,23 @@ const Terminal = () => {
       {/* Header with ASCII art and links */}
       <div className="header">
         <pre>
-        {` _                      _             _           __    __           _ 
-| |_ ___ _ __ _ __ ___ (_)_ __   __ _| |    ___  / _|  / _|_   _  __| |
-| __/ _ \\ '__| '_ \` _ \\| | '_ \\ / _\` | |   / _ \\| |_  | |_| | | |/ _\` |
-| ||  __/ |  | | | | | | | | | | (_| | |  | (_) |  _| |  _| |_| | (_| |
- \\__\\___|_|  |_| |_| |_|_|_| |_|\\__,_|_|___\\___/|_|___|_|  \\__,_|\\__,_|
-                                      |_____|    |_____|               
+        {` _                                                    _   
+| |__   ___  __ _ _ __  _ __ ___   ___     ___  _   _| |_ 
+| '_ \\ / _ \\/ _\` | '__|| '_ \` _ \\ / _ \\   / _ \\| | | | __|
+| | | |  __/ (_| | |   | | | | | |  __/  | (_) | |_| | |_ 
+|_| |_|\\___|\\__,_|_|___|_| |_| |_|\\___|___\\___/ \\__,_|\\__|
+                  |_____|            |_____|              
 `}
         </pre>
         <div className="links">
-          <a href="https://x.com/TerminalOfFud" target="_blank" rel="noopener noreferrer">[twitter]</a>
+          <a href="https://x.com/HearMeOutAI" target="_blank" rel="noopener noreferrer">[twitter]</a>
           <a href="https://pump.fun" target="_blank" rel="noopener noreferrer">[pump.fun]</a>
         </div>
       </div>
 
       {/* Terminal and Image */}
       <div className="terminal-container">
-        <div className="image-container"> 
+        <div className="image-container">
         </div>
 
         <div className="terminal">
